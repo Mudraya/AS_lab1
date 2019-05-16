@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="Which temperament do you have?"
+        android:textSize="26sp"
+        android:gravity="center"/>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textSize="26sp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <RadioButton
+            android:id="@+id/choleric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choleric" />
+
+        <RadioButton
+            android:id="@+id/phlegmatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phlegmatic" />
+
+        <RadioButton
+            android:id="@+id/sanguine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanguine" />
+
+        <RadioButton
+            android:id="@+id/melancholic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melancholic" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showSelection"
+        android:text="OK"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:textSize="26sp"
+        android:gravity="center"/>
+
+
+</LinearLayout>
